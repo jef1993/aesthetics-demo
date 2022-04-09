@@ -12,7 +12,7 @@
 html {
   font-size: 62.5%;
   font-family: "proxima-nova", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  color: #2a5c6b;
+  color: rgb(73, 107, 117);
 }
 
 body {
@@ -21,45 +21,64 @@ body {
   font-size: 1.8rem;
 }
 
-button {
-  border-top-right-radius: 30rem;
-  border-bottom-right-radius: 30rem;
-}
-
 a {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 400;
 }
 
-h1 {
-  font-size: 5rem;
-}
-
+h1,
 h2 {
-  font-size: 4.8rem;
+  font-size: 5rem;
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 122%;
+}
+h1 > span,
+h2 > span {
+  font-weight: 300;
 }
 
 h3 {
   font-size: 3.9rem;
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 122%;
+}
+h3 > span {
+  font-weight: 300;
 }
 
 p {
   font-size: 1.8rem;
   color: rgb(52, 52, 52);
+  line-height: 131%;
 }
 
 a:hover, a:focus {
-  color: #44a0a6;
+  color: rgb(68, 160, 166);
 }
 
 .App {
   min-height: 100vh;
   height: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background {
+  width: 100vw;
+  height: 94rem;
+  position: absolute;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to bottom, transparent 0%, transparent 80%, rgb(255, 255, 255)), url(https://theaestheticlounge.co.uk/static/media/home-hero.228bbd5e.png);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 75%, rgb(255, 255, 255)), url(https://theaestheticlounge.co.uk/static/media/home-hero.228bbd5e.png);
   background-size: cover;
-  background-position: center bottom;
+  background-position: left bottom;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .main > * {
@@ -94,6 +113,9 @@ a:hover, a:focus {
 .header {
   position: relative;
   height: 14.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .header__home {
   position: absolute;
@@ -107,7 +129,7 @@ a:hover, a:focus {
 }
 
 .nav {
-  height: 14.5rem;
+  height: 3.7rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -116,7 +138,7 @@ a:hover, a:focus {
 }
 .nav__list {
   display: flex;
-  gap: 2.2rem;
+  gap: 1.8rem;
   text-decoration: none;
 }
 .nav__link {
@@ -125,11 +147,12 @@ a:hover, a:focus {
   transition: all 0.3s ease;
 }
 .nav__current {
-  color: #44a0a6;
+  color: rgb(68, 160, 166);
 }
 .nav__ctn {
   display: flex;
   align-items: center;
+  height: inherit;
 }
 .nav__ctn > :last-child {
   display: flex;
@@ -137,14 +160,78 @@ a:hover, a:focus {
   align-items: center;
   margin-left: 2.2rem;
   text-transform: capitalize;
-  color: #2a5c6b;
+  color: rgb(73, 107, 117);
   width: 10rem;
-  height: 3.7rem;
-  border: 0.1rem solid #2a5c6b;
+  height: inherit;
+  border: 0.1rem solid rgb(73, 107, 117);
   font-weight: 600;
 }
 .nav__ctn > :last-child:hover {
   background-color: rgba(68, 160, 166, 0.2);
+}
+
+.banner {
+  margin-bottom: 23rem;
+}
+.banner > * {
+  width: 55%;
+}
+.banner__title {
+  padding-top: 9rem;
+  font-weight: 700;
+}
+.banner__title > span {
+  margin-left: 0.6rem;
+}
+.banner__content {
+  padding-top: 2.5rem;
+}
+.banner__btns {
+  padding-top: 5.5rem;
+}
+.banner__btn {
+  width: 20rem;
+  height: 5.5rem;
+}
+.banner__btn--1 {
+  border-top-right-radius: 30rem;
+  border-bottom-right-radius: 30rem;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: rgb(68, 160, 166);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+.banner__btn--1:hover {
+  box-shadow: rgb(119, 190, 194) 0px 7px 18px;
+}
+.banner__btn--2 {
+  border-top-right-radius: 30rem;
+  border-bottom-right-radius: 30rem;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: rgb(73, 107, 117);
+  border: 0.2rem solid rgb(73, 107, 117);
+  transition: all 0.3s ease;
+  margin-left: 2.2rem;
+}
+.banner__btn--2:hover {
+  background-color: rgba(135, 209, 214, 0.3);
+}
+
+.treatments {
+  width: 113.5rem;
+}
+.treatments__title {
+  padding-bottom: 4.6rem;
+}
+.treatments__title > span {
+  margin-right: 0.6rem;
 }
 
 /*# sourceMappingURL=index.css.map */

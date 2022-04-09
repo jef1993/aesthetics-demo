@@ -2,6 +2,9 @@
   position: relative;
 
   height: 14.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__home {
     position: absolute;
@@ -17,7 +20,7 @@
 }
 
 .nav {
-  height: 14.5rem;
+  height: 3.7rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,13 +49,14 @@
   &__ctn {
     display: flex;
     align-items: center;
+    height: inherit;
     & > :last-child {
       @include flexCenter;
-      margin-left: $nav-item-gap;
+      margin-left: 2.2rem;
       text-transform: capitalize;
       color: $color-main;
       width: 10rem;
-      height: 3.7rem;
+      height: inherit;
       border: 0.1rem solid $color-main;
       font-weight: 600;
 

@@ -1,5 +1,5 @@
-$color-main: #2a5c6b;
-$color-sub: #44a0a6;
+$color-main: rgb(73, 107, 117);
+$color-sub: rgb(68, 160, 166);
 $color-black: rgb(52, 52, 52);
 $color-white: rgb(255, 255, 255);
 
@@ -30,4 +30,5 @@ $font-weight-regular: 400;
 $font-weight-light: 300;
 
 $border-radius: 1rem;
-$nav-item-gap: 2.2rem;
+$nav-item-gap: 1.8rem;
+$btn-hover-bg: rgba(135, 209, 214, 0.3);

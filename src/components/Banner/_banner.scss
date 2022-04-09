@@ -1,0 +1,36 @@
+.banner {
+  margin-bottom: 23rem;
+  & > * {
+    width: 55%;
+  }
+
+  &__title {
+    padding-top: 9rem;
+    font-weight: 700;
+
+    & > span {
+      margin-left: 0.6rem;
+    }
+  }
+
+  &__content {
+    padding-top: 2.5rem;
+  }
+
+  &__btns {
+    padding-top: 5.5rem;
+  }
+
+  &__btn {
+    width: 20rem;
+    height: 5.5rem;
+    &--1 {
+      @include btn-1;
+    }
+
+    &--2 {
+      @include btn-2;
+      margin-left: 2.2rem;
+    }
+  }
+}
