@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $font-main;
+  color: $color-main;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $font-size-p;
+}
+
+button {
+  border-top-right-radius: 30rem;
+  border-bottom-right-radius: 30rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+}

@@ -1,0 +1,64 @@
+.header {
+  position: relative;
+
+  height: 14.5rem;
+
+  &__home {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &__logo {
+    width: 8.2rem;
+    height: 8.2rem;
+  }
+}
+
+.nav {
+  height: 14.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 13rem;
+
+  &__list {
+    display: flex;
+    gap: $nav-item-gap;
+    text-decoration: none;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $color-black;
+    transition: all 0.3s ease;
+  }
+
+  &__current {
+    color: $color-sub;
+  }
+
+  &__ctn {
+    display: flex;
+    align-items: center;
+    & > :last-child {
+      @include flexCenter;
+      margin-left: $nav-item-gap;
+      text-transform: capitalize;
+      color: $color-main;
+      width: 10rem;
+      height: 3.7rem;
+      border: 0.1rem solid $color-main;
+      font-weight: 600;
+
+      &:hover {
+        background-color: rgba($color-sub, 0.2);
+      }
+    }
+  }
+}

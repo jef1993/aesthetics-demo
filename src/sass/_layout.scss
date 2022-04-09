@@ -1,0 +1,21 @@
+.App {
+  min-height: 100vh;
+  height: auto;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 80%,
+      $color-white
+    ),
+    url(https://theaestheticlounge.co.uk/static/media/home-hero.228bbd5e.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.main {
+  & > * {
+    margin: auto;
+    width: 122rem;
+  }
+}

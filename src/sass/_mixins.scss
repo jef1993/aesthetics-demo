@@ -1,0 +1,16 @@
+@mixin btn-1 {
+  background-color: $color-sub;
+  color: $color-white;
+}
+
+@mixin btn-2 {
+  background-color: $color-white;
+  color: $color-main;
+  border: 0.2rem solid $color-main;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3.9rem;
+}
+
+p {
+  font-size: 1.8rem;
+  color: $color-black;
+}
+
+a {
+  &:hover,
+  &:focus {
+    color: $color-sub;
+  }
+}
