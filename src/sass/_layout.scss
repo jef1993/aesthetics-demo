@@ -7,8 +7,8 @@
 }
 
 .background {
-  width: 100vw;
-  height: 93.5rem;
+  width: 99vw;
+  height: 93.7rem;
   position: absolute;
   background-repeat: no-repeat;
   background-image: linear-gradient(
@@ -18,7 +18,7 @@
       $color-white
     ),
     url(https://theaestheticlounge.co.uk/static/media/home-hero.228bbd5e.png);
-  background-size: 99vw;
+  background-size: cover;
   background-position: left bottom;
   top: 0;
   left: 0;

@@ -1,4 +1,4 @@
-class treatment {
+class Treatment {
   constructor(name, info, url) {
     this.name = name;
     this.info = info;
@@ -7,7 +7,7 @@ class treatment {
 }
 
 const treatmentData = [
-  new treatment(
+  new Treatment(
     "Lip Filter",
     [
       "If you’re looking for more sumptuous lips and a perfect pout, then lip filler augmentations are perfect for you.",
@@ -15,14 +15,14 @@ const treatmentData = [
     ],
     "https://theaestheticlounge.co.uk/static/media/01.9447976b.png"
   ),
-  new treatment(
+  new Treatment(
     "Energy Booster",
     [
       "Our boosters are specially designed to provide your structure with the right minerals, vitamins, and amino acids that you need for maximum energy and skin health.",
     ],
     "https://theaestheticlounge.co.uk/static/media/02.37fb6c79.png"
   ),
-  new treatment(
+  new Treatment(
     "Weight Loss",
     [
       "Getting rid of unwanted pockets can be one of life’s many difficulties. And it can be one of those subjects that are sensitive to some.",
@@ -30,7 +30,7 @@ const treatmentData = [
     ],
     "https://theaestheticlounge.co.uk/static/media/03.45ca97d5.png"
   ),
-  new treatment(
+  new Treatment(
     "Facial Definition",
     [
       "Many people opt for facial treatment in order to add more definition to their cheekbones and jawline, or sometimes to raise the mid-face and give themselves a more youthful looking appearance.",
@@ -38,7 +38,7 @@ const treatmentData = [
     ],
     "https://theaestheticlounge.co.uk/static/media/04.576498b1.png"
   ),
-  new treatment(
+  new Treatment(
     "Facial Smoother",
     [
       "If you’re looking to address any facial curves, bumps or lumps, as well as nasal appearance, then the Aesthetic Lounge is here to help.",
@@ -47,7 +47,7 @@ const treatmentData = [
     ],
     "https://theaestheticlounge.co.uk/static/media/05.0202564e.png"
   ),
-  new treatment(
+  new Treatment(
     "Anti-Wrinkle",
     [
       "We here at the Aesthetic Lounge offer anti-wrinkle treatments to help smoothen out your skin and give your features a much more rounded, natural and subtle look.",
@@ -56,7 +56,7 @@ const treatmentData = [
     ],
     "https://theaestheticlounge.co.uk/static/media/06.9c351d8d.png"
   ),
-  new treatment(
+  new Treatment(
     "Skin Boosters",
     [
       "Our skin boosters are the ultimate way to achieve fantastic skin health. Ideal for individuals who either want to avoid fillers or have reached their limit, we combine the highest quality of ingredients to create a cocktail that can give your skin a real glow.",
@@ -64,7 +64,7 @@ const treatmentData = [
     ],
     "https://theaestheticlounge.co.uk/static/media/07.475bb608.png"
   ),
-  new treatment(
+  new Treatment(
     "Body Definition",
     [
       "As we all get older, our body naturally begins to lose volume and tissue elasticity, and for thousands of people, they wish to give their body, hips, and buttocks a much needed restoration.",
@@ -72,7 +72,7 @@ const treatmentData = [
     ],
     "https://theaestheticlounge.co.uk/static/media/08.1d315be0.png"
   ),
-  new treatment(
+  new Treatment(
     "Non-Surgical BBL + Hip Filler",
     [
       "For those looking to enhance their figure, our BBL treatment is perfect for you.",
