@@ -1,55 +1,50 @@
+import React, { useState } from "react";
+
+import treatmentData from "../../data/treatmentData";
+import TreatmentItem from "./TreatmentItem";
+
 const Treatments = () => {
+  const data = treatmentData;
+  const [selected, setSelected] = useState(0);
+
   return (
-    <section className="treatments heading">
+    <section className="treatments">
       <h2 className="treatments__title">
         <span>our</span>treatments
       </h2>
-      <div className="treatments__ctn">
-        <ul className="treatments__list">
-          <button className="treatments__item">
-            <p>Lip Filler</p>
-          </button>
-          <button className="treatments__item">
-            <p>Lip Filler</p>
-          </button>
-          <button className="treatments__item">
-            <p>Lip Filler</p>
-          </button>
-          <button className="treatments__item">
-            <p>Lip Filler</p>
-          </button>
-          <button className="treatments__item">
-            <p>Lip Filler</p>
-          </button>
-          <button className="treatments__item">
-            <p>Lip Filler</p>
-          </button>
-          <button className="treatments__item">
-            <p>Lip Filler</p>
-          </button>
-          <button className="treatments__item">
-            <p>Lip Filler</p>
-          </button>
-          <button className="treatments__item">
-            <p>Lip Filler</p>
-          </button>
-        </ul>
+      <ul className="treatments__list">
+        {data.map((obj, i) => (
+          <TreatmentItem
+            key={i}
+            id={`treatment-item--1${i}`}
+            name={obj.name}
+            url={obj.url}
+            onClick={() => {
+              setSelected(i);
+            }}
+          />
+        ))}
+      </ul>
+      <div className="treatments__preview">
         <img
-          className="treatment__img"
-          src="https://theaestheticlounge.co.uk/static/media/01.9447976b.png"
+          className="treatments__img"
+          src={data[selected].url}
           alt="treatment pic"
         ></img>
-        <div className="treatments__details">
-          <h3 className="treatments__name">Lip Filler</h3>
-          <p className="treatments__info">{`If you’re looking for more sumptuous lips and a perfect pout, then lip filler augmentations are perfect for you.
+      </div>
 
-Designed to restore and enhance the shape and volume of your lips, lip fillers are an incredibly popular option for both younger and older individuals. Our bespoke treatment is entirely safe, allowing you to have the lips you desire.`}</p>
-          <div className="treatments__btns">
-            <button className="treatments__btn--1">Book Me In</button>
-            <button className="treatments__btn--2">
-              Read More On Treatments
-            </button>
-          </div>
+      <div className="treatments__details">
+        <h3 className="treatments__name">{data[selected].name}</h3>
+        {data[selected].info.map((str, i) => (
+          <p className="treatments__info" key={i}>
+            {str}
+          </p>
+        ))}
+        <div className="treatments__btns">
+          <button className="treatments__btn--1">Book Me In</button>
+          <button className="treatments__btn--2">
+            Read More On Treatments
+          </button>
         </div>
       </div>
     </section>

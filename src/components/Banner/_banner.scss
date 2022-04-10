@@ -30,7 +30,7 @@
 
     &--2 {
       @include btn-2;
-      margin-left: 2.2rem;
+      margin-left: $btn-main-gap;
     }
   }
 }
