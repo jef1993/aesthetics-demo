@@ -28,7 +28,18 @@ textarea {
   font-size: 1.8rem;
   font-family: $font-main;
   color: $color-main-2;
-  padding: 2.1rem;
+  padding: 0rem 2.1rem;
+  outline: none;
+
+  &:focus {
+    box-shadow: $input-shadow-area $box-shadow-input-value;
+  }
+
+  &:invalid {
+    background-color: $color-invalid-sub;
+    border-color: $color-invalid-main;
+    box-shadow: $input-shadow-area $box-shadow-invalid-value;
+  }
 }
 
 textarea {

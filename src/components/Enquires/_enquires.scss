@@ -5,10 +5,11 @@
   background-color: $color-bg-2;
   width: 100%;
   border-top-right-radius: 34.5rem;
-  padding: 7.5rem 0 9.4rem 0;
+  padding: 6.5rem 0 9.4rem 0;
 
   &__title {
-    padding-bottom: 5.5rem;
+    padding-bottom: 4.8rem;
+    font-size: 4.8rem;
     & > span {
       padding-left: $heading-gap;
     }
@@ -19,7 +20,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, auto);
-    gap: 3.5rem;
+    gap: 3.5rem 2.85rem;
   }
 
   &__subject {

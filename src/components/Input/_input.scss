@@ -1,11 +1,64 @@
 .input {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &__label {
+    position: absolute;
+    top: 50%;
+    transform: translate(2.1rem, -50%);
+    transition: all 0.15s;
+    line-height: 100%;
   }
 
   &__box {
     height: 5.35rem;
+
+    &:focus {
+      & ~ .input__label {
+        top: -0.5rem;
+
+        transform: translate(0.5rem, -100%);
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__stay {
+    & ~ .input__label {
+      top: -0.5rem;
+      transform: translate(0.5rem, -100%);
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.textbox {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: 1.7rem;
+    transform: translate(2.1rem, 0);
+    transition: all 0.15s;
+  }
+
+  &__box {
+    padding-top: 1rem;
+    &:focus {
+      & ~ .textbox__label {
+        top: -0.5rem;
+        transform: translate(0.5rem, -100%);
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__stay {
+    & ~ .textbox__label {
+      top: -0.5rem;
+      transform: translate(0.5rem, -100%);
+      font-size: 1.4rem;
+    }
   }
 }

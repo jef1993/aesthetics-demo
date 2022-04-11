@@ -69,7 +69,7 @@
   }
 
   &.chosen {
-    scale: 1.05;
+    transform: scale(1.05);
     box-shadow: $box-shadow-value $color-box-shadow;
 
     &::before {
@@ -111,7 +111,8 @@
         & > .course__name {
           color: $color-white;
           border-color: $color-white;
-          padding-bottom: 1.3rem;
+          padding-bottom: 2rem;
+          padding-top: 1rem;
 
           & ~ hr {
             background-color: $color-white;
@@ -132,20 +133,19 @@
   &__ctn {
     height: inherit;
     border-radius: 1rem;
-    transform: translateY(69%);
+    transform: translateY(71%);
     transition: all 0.5s ease;
     padding: 2.2rem;
     position: relative;
   }
   &__name {
     color: $color-main-2;
-    padding-bottom: 3.6rem;
+    padding-bottom: 4.5rem;
     position: relative;
     font-size: 2.2rem;
     width: inherit;
     border-bottom: 0.5px solid $color-main-2;
     margin-bottom: 1.5rem;
-    margin-top: -0.4rem;
   }
 
   &__info {

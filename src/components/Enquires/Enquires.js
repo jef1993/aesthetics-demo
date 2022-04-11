@@ -1,4 +1,5 @@
 import Input from "../Input/Input";
+import TextArea from "../Input/TextArea";
 
 const Enquires = () => {
   const submitHandler = () => {};
@@ -9,7 +10,7 @@ const Enquires = () => {
       </h2>
       <form className="enquires__form" onSubmit={submitHandler}>
         <Input component="enquires" type="text" name="First name" id="fName" />
-        <Input component="enquires" type="text" name="Last Name" id="lName" />
+        <Input component="enquires" type="text" name="Last name" id="lName" />
         <Input
           component="enquires"
           type="tel"
@@ -23,12 +24,7 @@ const Enquires = () => {
           id="email"
         />
         <Input component="enquires" type="text" name="Subject" id="subject" />
-        <div className="enquires__message">
-          <label className="input enquires__label" htmlFor="message">
-            Message
-          </label>
-          <textarea className="textbox" id="message"></textarea>
-        </div>
+        <TextArea component="enquires" name="Message" id="message" />
         <div className="enquires__submit">
           <button type="submit" className="enquires__btn">
             Submit

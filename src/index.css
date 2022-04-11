@@ -29,7 +29,18 @@ textarea {
   font-size: 1.8rem;
   font-family: "proxima-nova", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: rgb(42, 92, 107);
-  padding: 2.1rem;
+  padding: 0rem 2.1rem;
+  outline: none;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0px 2px 10px 0px rgba(26, 26, 26, 0.15);
+}
+input:invalid,
+textarea:invalid {
+  background-color: rgb(255, 229, 239);
+  border-color: rgb(255, 0, 101);
+  box-shadow: 0px 2px 10px 0px rgba(255, 0, 101, 0.15);
 }
 
 textarea {
@@ -101,12 +112,6 @@ a:hover, a:focus {
   width: 122rem;
 }
 
-.swiper-pagination {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-self: center;
-}
 .swiper-pagination * {
   height: 1rem !important;
   width: 1rem !important;
@@ -122,9 +127,50 @@ a:hover, a:focus {
 .input {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.input__label {
+  position: absolute;
+  top: 50%;
+  transform: translate(2.1rem, -50%);
+  transition: all 0.15s;
+  line-height: 100%;
 }
 .input__box {
   height: 5.35rem;
+}
+.input__box:focus ~ .input__label {
+  top: -0.5rem;
+  transform: translate(0.5rem, -100%);
+  font-size: 1.4rem;
+}
+.input__stay ~ .input__label {
+  top: -0.5rem;
+  transform: translate(0.5rem, -100%);
+  font-size: 1.4rem;
+}
+
+.textbox {
+  position: relative;
+}
+.textbox__label {
+  position: absolute;
+  top: 1.7rem;
+  transform: translate(2.1rem, 0);
+  transition: all 0.15s;
+}
+.textbox__box {
+  padding-top: 1rem;
+}
+.textbox__box:focus ~ .textbox__label {
+  top: -0.5rem;
+  transform: translate(0.5rem, -100%);
+  font-size: 1.4rem;
+}
+.textbox__stay ~ .textbox__label {
+  top: -0.5rem;
+  transform: translate(0.5rem, -100%);
+  font-size: 1.4rem;
 }
 
 .header {
@@ -405,7 +451,7 @@ a:hover, a:focus {
   background-size: cover;
 }
 .course.chosen {
-  scale: 1.05;
+  transform: scale(1.05);
   box-shadow: 0px 31px 35px 0px rgba(123, 168, 182, 0.4);
 }
 .course.chosen::before {
@@ -440,7 +486,8 @@ a:hover, a:focus {
 .course__btn.chosen ~ .course__ctn > .course__name {
   color: rgb(255, 255, 255);
   border-color: rgb(255, 255, 255);
-  padding-bottom: 1.3rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 .course__btn.chosen ~ .course__ctn > .course__name ~ hr {
   background-color: rgb(255, 255, 255);
@@ -452,20 +499,19 @@ a:hover, a:focus {
 .course__ctn {
   height: inherit;
   border-radius: 1rem;
-  transform: translateY(69%);
+  transform: translateY(71%);
   transition: all 0.5s ease;
   padding: 2.2rem;
   position: relative;
 }
 .course__name {
   color: rgb(42, 92, 107);
-  padding-bottom: 3.6rem;
+  padding-bottom: 4.5rem;
   position: relative;
   font-size: 2.2rem;
   width: inherit;
   border-bottom: 0.5px solid rgb(42, 92, 107);
   margin-bottom: 1.5rem;
-  margin-top: -0.4rem;
 }
 .course__info {
   opacity: 0;
@@ -664,10 +710,11 @@ a:hover, a:focus {
   background-color: rgba(128, 163, 165, 0.09);
   width: 100%;
   border-top-right-radius: 34.5rem;
-  padding: 7.5rem 0 9.4rem 0;
+  padding: 6.5rem 0 9.4rem 0;
 }
 .enquires__title {
-  padding-bottom: 5.5rem;
+  padding-bottom: 4.8rem;
+  font-size: 4.8rem;
 }
 .enquires__title > span {
   padding-left: 0.7rem;
@@ -677,7 +724,7 @@ a:hover, a:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, auto);
-  gap: 3.5rem;
+  gap: 3.5rem 2.85rem;
 }
 .enquires__subject {
   grid-area: 3/1/span 1/-1;
