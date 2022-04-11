@@ -6,6 +6,7 @@ import Treatments from "./components/Treatments/Treatments";
 import Courses from "./components/Courses/Courses";
 import Showcase from "./components/Showcase/Showcase";
 import Testi from "./components/Testi/Testi";
+import Enquires from "./components/Enquires/Enquires";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Courses />
         <Showcase />
         <Testi />
+        <Enquires />
       </div>
     </div>
   );

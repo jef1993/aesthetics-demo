@@ -1,0 +1,11 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+  }
+
+  &__box {
+    height: 5.35rem;
+  }
+}

@@ -21,6 +21,20 @@ body {
   font-size: $font-size-p;
 }
 
+input,
+textarea {
+  border-radius: 1rem;
+  border: 2px solid $color-main-2;
+  font-size: 1.8rem;
+  font-family: $font-main;
+  color: $color-main-2;
+  padding: 2.1rem;
+}
+
+textarea {
+  height: 11rem;
+}
+
 a {
   text-decoration: none;
   font-size: 1.6rem;

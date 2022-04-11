@@ -1,4 +1,9 @@
 .swiper-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-self: center;
+
   & * {
     height: 1rem !important;
     width: 1rem !important;

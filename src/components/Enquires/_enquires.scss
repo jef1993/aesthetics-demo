@@ -1,0 +1,48 @@
+.enquires {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-bg-2;
+  width: 100%;
+  border-top-right-radius: 34.5rem;
+  padding: 7.5rem 0 9.4rem 0;
+
+  &__title {
+    padding-bottom: 5.5rem;
+    & > span {
+      padding-left: $heading-gap;
+    }
+  }
+
+  &__form {
+    width: 69.24rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 3.5rem;
+  }
+
+  &__subject {
+    grid-area: 3/1 / span 1/-1;
+  }
+
+  &__message {
+    grid-area: 4/1 / span 1/-1;
+
+    & > textarea {
+      width: 100%;
+    }
+  }
+
+  &__submit {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    grid-area: 5/1 / span 1/-1;
+  }
+
+  &__btn {
+    @include btn-1;
+    width: 35rem;
+  }
+}
