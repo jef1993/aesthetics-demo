@@ -1,0 +1,175 @@
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 113.5rem;
+  gap: 9rem;
+
+  &__slogan {
+    font-size: 4.4rem;
+    margin-top: 10.8rem;
+    width: inherit;
+
+    padding: 1.35em 0;
+    border-radius: 100rem;
+    background-color: rgba(128, 163, 165, 0.09);
+    box-shadow: $box-shadow-value $color-box-shadow;
+    text-align: center;
+    color: $color-main-2;
+
+    & > span {
+      margin-right: 0.6rem;
+      color: $color-main-2;
+    }
+  }
+
+  &__ctn {
+  }
+
+  &__title {
+    font-size: 4.8rem;
+    text-align: center;
+    padding-bottom: 2.2rem;
+    color: $color-main-2;
+
+    & > span {
+      margin-left: 0.6rem;
+      color: $color-main-2;
+    }
+  }
+}
+
+.course {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  height: 43rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+  transform-origin: center;
+  margin-right: 0.3rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      $color-white 105%
+    );
+    background-size: cover;
+  }
+
+  &.chosen {
+    transform: scale(1.05);
+    box-shadow: $box-shadow-value $color-box-shadow;
+
+    &::before {
+      background-image: linear-gradient(
+        to bottom,
+        rgba($color-main-2, 0.8),
+        rgba($color-main-2, 0.8)
+      );
+    }
+  }
+
+  &__btn {
+    height: 3.1rem;
+    width: 4.6rem;
+    background-color: $color-main-2;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-white;
+    border: none;
+    border-top-left-radius: 100rem;
+    border-top-right-radius: 100rem;
+    font-size: 2.3rem;
+    z-index: 2;
+    cursor: pointer;
+
+    & * {
+      padding-top: 0.5rem;
+    }
+
+    &.chosen {
+      background-color: $color-white;
+      color: $color-main-2;
+
+      & ~ .course__ctn {
+        transform: translateY(0%);
+
+        & > .course__name {
+          color: $color-white;
+          border-color: $color-white;
+          padding-bottom: 1.3rem;
+
+          & ~ hr {
+            background-color: $color-white;
+          }
+        }
+
+        & > .course__info {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  &__ctn {
+    height: inherit;
+    border-radius: 1rem;
+    transform: translateY(69%);
+    transition: all 0.5s ease;
+    padding: 2.2rem;
+    position: relative;
+  }
+  &__name {
+    color: $color-main-2;
+    padding-bottom: 3.6rem;
+    position: relative;
+    font-size: 2.2rem;
+    width: inherit;
+    border-bottom: 0.5px solid $color-main-2;
+    margin-bottom: 1.5rem;
+    margin-top: -0.4rem;
+  }
+
+  &__info {
+    opacity: 0;
+    visibility: hidden;
+
+    & > p {
+      color: $color-white;
+      padding-top: 1rem;
+      line-height: 123%;
+
+      font-size: 1.6rem;
+    }
+  }
+
+  &__link {
+    color: $color-main-2;
+    background-color: $color-white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 100rem;
+    box-sizing: padding-box;
+    width: 18rem;
+    padding: 0.9rem;
+    position: absolute;
+    bottom: 5.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

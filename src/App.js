@@ -5,6 +5,7 @@ import React from "react";
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
 import Treatments from "./components/Treatments/Treatments";
+import Courses from "./components/Courses/Courses";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <Banner />
         <Treatments />
+        <Courses />
       </div>
 
       {/* 

@@ -86,20 +86,6 @@ a:hover, a:focus {
   width: 122rem;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: transparent !important;
-  background-repeat: no-repeat;
-  background-size: 5rem auto !important;
-  background-position: center;
-  top: 24.5rem !important;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2224%22%20height%3D%2224%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%2344a0a6%22%20d%3D%22M10.02%206L8.61%207.41L13.19%2012l-4.58%204.59L10.02%2018l6-6l-6-6z%22%2F%3E%3C%2Fsvg%3E");
-}
-
-.swiper-button-prev {
-  transform: scaleX(-1);
-}
-
 .swiper-pagination * {
   height: 1rem !important;
   width: 1rem !important;
@@ -235,6 +221,7 @@ a:hover, a:focus {
 .treatments__title {
   grid-area: 1/1/span 1/-1;
   padding-bottom: 4.6rem;
+  color: rgb(42, 92, 107);
 }
 .treatments__title > span {
   margin-right: 0.6rem;
@@ -256,7 +243,7 @@ a:hover, a:focus {
   transition: all 0.2s ease;
 }
 .treatments__item:hover, .treatments__item:focus {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 0 2.5rem 0.3rem rgba(123, 168, 182, 0.4);
 }
 .treatments__item:hover p, .treatments__item:focus p {
@@ -326,6 +313,151 @@ a:hover, a:focus {
 }
 .treatments__btn--2:hover {
   background-color: rgba(135, 209, 214, 0.3);
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 113.5rem;
+  gap: 9rem;
+}
+.courses__slogan {
+  font-size: 4.4rem;
+  margin-top: 10.8rem;
+  width: inherit;
+  padding: 1.35em 0;
+  border-radius: 100rem;
+  background-color: rgba(128, 163, 165, 0.09);
+  box-shadow: 0px 31px 35px 0px rgba(123, 168, 182, 0.4);
+  text-align: center;
+  color: rgb(42, 92, 107);
+}
+.courses__slogan > span {
+  margin-right: 0.6rem;
+  color: rgb(42, 92, 107);
+}
+.courses__title {
+  font-size: 4.8rem;
+  text-align: center;
+  padding-bottom: 2.2rem;
+  color: rgb(42, 92, 107);
+}
+.courses__title > span {
+  margin-left: 0.6rem;
+  color: rgb(42, 92, 107);
+}
+
+.course {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  height: 43rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+  transform-origin: center;
+  margin-right: 0.3rem;
+}
+.course::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255) 105%);
+  background-size: cover;
+}
+.course.chosen {
+  transform: scale(1.05);
+  box-shadow: 0px 31px 35px 0px rgba(123, 168, 182, 0.4);
+}
+.course.chosen::before {
+  background-image: linear-gradient(to bottom, rgba(42, 92, 107, 0.8), rgba(42, 92, 107, 0.8));
+}
+.course__btn {
+  height: 3.1rem;
+  width: 4.6rem;
+  background-color: rgb(42, 92, 107);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-top-left-radius: 100rem;
+  border-top-right-radius: 100rem;
+  font-size: 2.3rem;
+  z-index: 2;
+  cursor: pointer;
+}
+.course__btn * {
+  padding-top: 0.5rem;
+}
+.course__btn.chosen {
+  background-color: rgb(255, 255, 255);
+  color: rgb(42, 92, 107);
+}
+.course__btn.chosen ~ .course__ctn {
+  transform: translateY(0%);
+}
+.course__btn.chosen ~ .course__ctn > .course__name {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  padding-bottom: 1.3rem;
+}
+.course__btn.chosen ~ .course__ctn > .course__name ~ hr {
+  background-color: rgb(255, 255, 255);
+}
+.course__btn.chosen ~ .course__ctn > .course__info {
+  opacity: 1;
+  visibility: visible;
+}
+.course__ctn {
+  height: inherit;
+  border-radius: 1rem;
+  transform: translateY(69%);
+  transition: all 0.5s ease;
+  padding: 2.2rem;
+  position: relative;
+}
+.course__name {
+  color: rgb(42, 92, 107);
+  padding-bottom: 3.6rem;
+  position: relative;
+  font-size: 2.2rem;
+  width: inherit;
+  border-bottom: 0.5px solid rgb(42, 92, 107);
+  margin-bottom: 1.5rem;
+  margin-top: -0.4rem;
+}
+.course__info {
+  opacity: 0;
+  visibility: hidden;
+}
+.course__info > p {
+  color: rgb(255, 255, 255);
+  padding-top: 1rem;
+  line-height: 123%;
+  font-size: 1.6rem;
+}
+.course__link {
+  color: rgb(42, 92, 107);
+  background-color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline-block;
+  border-radius: 100rem;
+  box-sizing: padding-box;
+  width: 18rem;
+  padding: 0.9rem;
+  position: absolute;
+  bottom: 5.2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=index.css.map */
