@@ -33,8 +33,9 @@
 
     &:hover,
     &:focus {
-      scale: 1.02;
+      transform: scale(1.03);
       box-shadow: 0 0 2.5rem 0.3rem $color-box-shadow;
+      outline: none;
 
       & p {
         opacity: 0;

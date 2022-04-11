@@ -1,21 +1,14 @@
 .testi {
   &__swiper {
-    // width: auto;
-    // width: 110%;
-    // height: 40rem;
-    width: 100%;
-    height: 100%;
-
-    background-color: rgb(59, 8, 52, 0.2);
+    width: 93%;
 
     & .swiper-slide {
-      // font-size: 2.4rem;
-      // height: 100%;
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
+      margin-bottom: 5rem;
+      padding: 4rem;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      height: 39rem;
     }
 
     & .swiper-pagination {
@@ -23,10 +16,6 @@
       padding-right: 4rem;
       display: flex;
       flex-direction: row;
-      justify-content: end;
     }
-  }
-
-  &__card {
   }
 }

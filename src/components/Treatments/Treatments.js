@@ -16,7 +16,7 @@ const Treatments = () => {
         {data.map((obj, i) => (
           <TreatmentItem
             key={i}
-            id={`treatment-item--1${i}`}
+            default={i === 0 ? true : false}
             name={obj.name}
             url={obj.url}
             onClick={() => {

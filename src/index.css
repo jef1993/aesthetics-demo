@@ -15,6 +15,7 @@ html {
   font-size: 62.5%;
   font-family: "proxima-nova", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: rgb(73, 107, 117);
+  line-height: 131%;
 }
 
 body {
@@ -89,11 +90,13 @@ a:hover, a:focus {
 .swiper-pagination * {
   height: 1rem !important;
   width: 1rem !important;
-  background-color: #44a0a6 !important;
+  background-color: rgb(68, 160, 166) !important;
+  opacity: 0.6 !important;
 }
 
-.swiper-pagination-active {
+.swiper-pagination-bullet-active {
   background-color: #44a0a6 !important;
+  opacity: 1 !important;
 }
 
 .header {
@@ -243,8 +246,9 @@ a:hover, a:focus {
   transition: all 0.2s ease;
 }
 .treatments__item:hover, .treatments__item:focus {
-  scale: 1.02;
+  transform: scale(1.03);
   box-shadow: 0 0 2.5rem 0.3rem rgba(123, 168, 182, 0.4);
+  outline: none;
 }
 .treatments__item:hover p, .treatments__item:focus p {
   opacity: 0;
@@ -530,13 +534,19 @@ a:hover, a:focus {
   display: flex;
   align-items: center;
   width: 120rem;
+  padding: 4rem 0 6rem 0;
+}
+.testi__ctn {
+  transform: translateY(3%);
 }
 .testi__title {
   color: rgb(42, 92, 107);
   font-size: 4.8rem;
+  line-height: 84%;
 }
 .testi__content {
   padding: 2.5rem 0 8.9rem 0;
+  color: rgb(42, 92, 107);
 }
 .testi__btns {
   display: flex;
@@ -584,18 +594,22 @@ a:hover, a:focus {
 }
 
 .testi-card {
-  background-color: beige;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5rem;
   padding: 3rem 4.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 15px 35px 0 rgba(123, 168, 182, 0.4);
+}
+.testi-card__title {
+  font-size: 2.4rem;
+  font-family: "proxima-nova", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 131%;
+  padding-bottom: 1.1rem;
 }
 .testi-card__comment {
-  width: 49.2rem;
-  height: 30rem;
-  background-color: aqua;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 .testi-card__bottom {
+  padding-top: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -604,12 +618,12 @@ a:hover, a:focus {
   display: flex;
   align-items: center;
   gap: 1.2rem;
+  font-weight: 700;
 }
 .testi-card__icon {
   height: 5rem;
   width: 5rem;
   border-radius: 10rem;
-  background-color: brown;
 }
 .testi-card__rating {
   height: 2.6rem;

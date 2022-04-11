@@ -1,5 +1,4 @@
 @mixin heading {
-
   font-family: forma-djr-banner, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -8,10 +7,7 @@
   & > span {
     font-weight: 300;
   }
-  
 }
-
-
 
 @mixin btn-1 {
   height: 5.5rem;

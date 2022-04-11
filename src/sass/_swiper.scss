@@ -2,9 +2,12 @@
   & * {
     height: 1rem !important;
     width: 1rem !important;
-    background-color: #44a0a6 !important;
+    background-color: rgb(68, 160, 166) !important;
+    opacity: 0.6 !important;
   }
 }
-.swiper-pagination-active {
+
+.swiper-pagination-bullet-active {
   background-color: #44a0a6 !important;
+  opacity: 1 !important;
 }
