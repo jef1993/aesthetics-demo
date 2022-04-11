@@ -10,7 +10,7 @@
     color: $color-main-2;
 
     & > span {
-      margin-right: 0.6rem;
+      margin-right: $heading-gap;
     }
   }
 
@@ -33,7 +33,7 @@
 
     &:hover,
     &:focus {
-      transform: scale(1.02);
+      scale: 1.02;
       box-shadow: 0 0 2.5rem 0.3rem $color-box-shadow;
 
       & p {

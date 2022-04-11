@@ -5,6 +5,7 @@
   align-items: center;
   width: 113.5rem;
   gap: 9rem;
+  padding-bottom: 6rem;
 
   &__slogan {
     font-size: 4.4rem;
@@ -34,7 +35,7 @@
     color: $color-main-2;
 
     & > span {
-      margin-left: 0.6rem;
+      margin-left: $heading-gap;
       color: $color-main-2;
     }
   }
@@ -68,7 +69,7 @@
   }
 
   &.chosen {
-    transform: scale(1.05);
+    scale: 1.05;
     box-shadow: $box-shadow-value $color-box-shadow;
 
     &::before {
@@ -120,6 +121,9 @@
         & > .course__info {
           opacity: 1;
           visibility: visible;
+
+          & > p {
+          }
         }
       }
     }
@@ -147,11 +151,14 @@
   &__info {
     opacity: 0;
     visibility: hidden;
+    overflow-y: hidden;
+    height: 60%;
 
     & > p {
       color: $color-white;
       padding-top: 1rem;
       line-height: 123%;
+      transform: scale(1);
 
       font-size: 1.6rem;
     }

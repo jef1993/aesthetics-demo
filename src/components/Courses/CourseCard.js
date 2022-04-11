@@ -23,8 +23,8 @@ const CourseCard = (props) => {
         <span className="course__line"></span>
 
         <div className="course__info">
-          {props.info.map((str) => (
-            <p>{str}</p>
+          {props.info.map((str, i) => (
+            <p key={i}>{str}</p>
           ))}
         </div>
         <a className="course__link" href="/">

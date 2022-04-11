@@ -1,11 +1,11 @@
 import React from "react";
 
-// import TestiSwiper from "./components/TestiSwiper/TestiSwiper";
-
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
 import Treatments from "./components/Treatments/Treatments";
 import Courses from "./components/Courses/Courses";
+import Showcase from "./components/Showcase/Showcase";
+import Testi from "./components/Testi/Testi";
 
 function App() {
   return (
@@ -16,11 +16,9 @@ function App() {
         <Banner />
         <Treatments />
         <Courses />
+        <Showcase />
+        <Testi />
       </div>
-
-      {/* 
-      <TestiSwiper />
-      <input reqiured onBlur={{ backgroundColor: "pink" }}></input> */}
     </div>
   );
 }

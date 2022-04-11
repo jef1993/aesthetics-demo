@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -9,30 +9,37 @@ import "swiper/css/navigation";
 
 // import swiper from "./testiswiper.module.scss";
 import "./testiswiper.scss";
+import TestiCard from "../Testi/TestiCard";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 function TestiSwiper() {
   return (
     <>
       <Swiper
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={0}
         loop={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: true,
+        }}
+        modules={[Pagination, Autoplay]}
         className={`testi__swiper`}
       >
         <SwiperSlide>
-          <div className={`testi__card`}>627</div>
+          <TestiCard />
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>
+          <TestiCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <TestiCard />
+        </SwiperSlide>
       </Swiper>
     </>
   );

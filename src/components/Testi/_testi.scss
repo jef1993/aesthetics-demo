@@ -1,0 +1,77 @@
+.testi {
+  display: flex;
+  align-items: center;
+  width: 120rem;
+
+  &__ctn {
+  }
+
+  &__title {
+    color: $color-main-2;
+    font-size: 4.8rem;
+  }
+
+  &__content {
+    padding: 2.5rem 0 8.9rem 0;
+  }
+
+  &__btns {
+    display: flex;
+    gap: $btn-main-gap;
+    & > a {
+      width: 20rem;
+    }
+  }
+
+  &__btn {
+    &--1 {
+      @include btn-1;
+      @include flexCenter;
+    }
+
+    &--2 {
+      @include btn-2;
+      @include flexCenter;
+    }
+  }
+}
+
+.testi-card {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  padding: 3rem 4.5rem;
+
+  &__title {
+  }
+
+  &__comment {
+    width: 49.2rem;
+    height: 30rem;
+    background-color: aqua;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 10rem;
+    background-color: brown;
+  }
+
+  &__rating {
+    height: 2.6rem;
+  }
+}
