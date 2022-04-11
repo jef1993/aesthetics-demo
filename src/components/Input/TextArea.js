@@ -8,6 +8,11 @@ const TextArea = (props) => {
         ? "textbox__box textbox__stay"
         : "textbox__box";
   };
+
+  const focusHandler = () => {
+    inputRef.current.required = true;
+    console.log(inputRef.current);
+  };
   return (
     <div className={`textbox ${props.component}__${props.id}`}>
       <textarea
@@ -15,6 +20,8 @@ const TextArea = (props) => {
         className="textbox__box"
         id={`${props.id}`}
         ref={inputRef}
+        onFocus={focusHandler}
+        required={props.validate}
       ></textarea>
       <label className="input textbox__label" htmlFor={`${props.id}`}>
         {props.name}
