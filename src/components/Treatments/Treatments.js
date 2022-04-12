@@ -10,7 +10,7 @@ const Treatments = () => {
   return (
     <section className="treatments">
       <h2 className="treatments__title">
-        <span>our</span>treatments
+        our<strong>treatments</strong>
       </h2>
       <ul className="treatments__list">
         {data.map((obj, i) => (

@@ -17,8 +17,8 @@
   &__title {
     line-height: 84%;
     font-size: 4.8rem;
-    & > span {
-      padding-right: $heading-gap;
+    & > strong {
+      padding-left: $heading-gap;
     }
   }
   &__content {

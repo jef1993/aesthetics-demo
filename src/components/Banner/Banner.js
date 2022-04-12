@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <section className="banner">
       <h1 className="banner__title heading">
-        Aesthetics<span>you can trust.</span>
+        <strong>Aesthetics</strong>you can trust.
       </h1>
       <p className="banner__content">
         Delivering world-class cosmetic services and aesthetics training to help

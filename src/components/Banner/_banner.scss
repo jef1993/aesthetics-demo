@@ -6,10 +6,9 @@
 
   &__title {
     padding-top: 9rem;
-    font-weight: 700;
 
-    & > span {
-      margin-left: $heading-gap;
+    & > strong {
+      padding-right: $heading-gap;
     }
   }
 

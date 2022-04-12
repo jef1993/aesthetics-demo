@@ -7,6 +7,7 @@ import Courses from "./components/Courses/Courses";
 import Showcase from "./components/Showcase/Showcase";
 import Testi from "./components/Testi/Testi";
 import Enquires from "./components/Enquires/Enquires";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Showcase />
         <Testi />
         <Enquires />
+        <Footer />
       </div>
     </div>
   );

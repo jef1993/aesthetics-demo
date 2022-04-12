@@ -11,7 +11,7 @@ const Enquires = () => {
   return (
     <section className="enquires">
       <h2 className="enquires__title">
-        enquire<span>about our services</span>
+        <strong>enquire</strong>about our services
       </h2>
       <form className="enquires__form" onSubmit={submitHandler}>
         <Input
@@ -49,7 +49,12 @@ const Enquires = () => {
           id="subject"
           validate={validate}
         />
-        <TextArea component="enquires" name="Message" id="message" validate={validate}/>
+        <TextArea
+          component="enquires"
+          name="Message"
+          id="message"
+          validate={validate}
+        />
         <div className="enquires__submit">
           <button type="submit" className="enquires__btn">
             Submit

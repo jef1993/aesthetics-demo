@@ -30,6 +30,7 @@ textarea {
   color: $color-main-2;
   padding: 0rem 2.1rem;
   outline: none;
+  background-color: rgb(250, 250, 250);
 
   &:focus {
     box-shadow: $input-shadow-area $box-shadow-input-value;

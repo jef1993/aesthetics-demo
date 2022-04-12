@@ -10,8 +10,9 @@
   &__title {
     padding-bottom: 4.8rem;
     font-size: 4.8rem;
-    & > span {
-      padding-left: $heading-gap;
+    color: $color-main-2;
+    & > strong {
+      margin-right: $heading-gap;
     }
   }
 
@@ -20,7 +21,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, auto);
-    gap: 3.5rem 2.85rem;
+    gap: 3.5rem 2.7rem;
   }
 
   &__subject {
@@ -36,7 +37,7 @@
   }
 
   &__submit {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     display: flex;
     justify-content: center;
     grid-area: 5/1 / span 1/-1;

@@ -27,7 +27,7 @@ function TestiSwiper(props) {
           clickable: true,
         }}
         autoplay={{
-          delay: 5000,
+          delay: 10000,
           disableOnInteraction: true,
         }}
         modules={[Pagination, Autoplay]}

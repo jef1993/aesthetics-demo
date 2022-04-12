@@ -5,7 +5,7 @@ const Showcase = () => {
     <section className="showcase">
       <div className="showcase__heading">
         <h2 className="showcase__title">
-          <span>don't just take</span>our word for it
+          don't just take<strong>our word for it</strong>
         </h2>
         <p className="showcase__content">
           Here’s just a few of the people who have been given the complete,
