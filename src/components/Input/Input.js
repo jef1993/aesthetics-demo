@@ -10,10 +10,7 @@ const Input = (props) => {
 
   const focusHandler = () => {
     inputRef.current.required = true;
-    console.log(inputRef.current);
   };
-
-
 
   return (
     <div className={`input ${props.component}__${props.id}`}>
@@ -24,9 +21,7 @@ const Input = (props) => {
         onFocus={focusHandler}
         ref={inputRef}
         onBlur={blurHandler}
-        onSubmit={() => {
-          console.log("out");
-        }}
+        onSubmit={() => {}}
         required={props.validate}
       ></input>
       <label className="input__label" htmlFor={props.id}>

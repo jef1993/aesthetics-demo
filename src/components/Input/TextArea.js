@@ -11,7 +11,7 @@ const TextArea = (props) => {
 
   const focusHandler = () => {
     inputRef.current.required = true;
-    console.log(inputRef.current);
+  
   };
   return (
     <div className={`textbox ${props.component}__${props.id}`}>
