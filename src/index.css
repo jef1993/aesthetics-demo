@@ -164,13 +164,11 @@ a:hover, a:focus {
   padding-top: 1.5rem;
 }
 .textbox__box:focus ~ .textbox__label {
-  top: -0.5rem;
-  transform: translate(0.5rem, -100%);
+  transform: translate(0.5rem, -3.9rem);
   font-size: 1.4rem;
 }
 .textbox__stay ~ .textbox__label {
-  top: -0.5rem;
-  transform: translate(0.5rem, -100%);
+  transform: translate(0.5rem, -3.9rem);
   font-size: 1.4rem;
 }
 

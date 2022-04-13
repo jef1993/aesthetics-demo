@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 const TextArea = (props) => {
   const inputRef = useRef();
 
-  const blurHandler = () => {
+  const changeHandler = () => {
     inputRef.current.className =
       inputRef.current.value !== ""
         ? "textbox__box textbox__stay"
@@ -16,7 +16,7 @@ const TextArea = (props) => {
   return (
     <div className={`textbox ${props.component}__${props.id}`}>
       <textarea
-        onBlur={blurHandler}
+        onChange={changeHandler}
         className="textbox__box"
         id={`${props.id}`}
         ref={inputRef}

@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 const Input = (props) => {
   const inputRef = useRef();
 
-  const blurHandler = () => {
+  const changeHandler = () => {
     inputRef.current.className =
       inputRef.current.value !== "" ? "input__box input__stay" : "input__box";
   };
@@ -20,7 +20,7 @@ const Input = (props) => {
         id={props.id}
         onFocus={focusHandler}
         ref={inputRef}
-        onBlur={blurHandler}
+        onChange={changeHandler}
         onSubmit={() => {}}
         required={props.validate}
       ></input>
