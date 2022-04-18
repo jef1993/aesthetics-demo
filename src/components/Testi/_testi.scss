@@ -32,11 +32,19 @@
     &--1 {
       @include btn-1;
       @include flexCenter;
+
+      &:hover {
+        color: $color-white;
+      }
     }
 
     &--2 {
       @include btn-2;
       @include flexCenter;
+
+      &:hover {
+        color: $color-main-2;
+      }
     }
   }
 }
