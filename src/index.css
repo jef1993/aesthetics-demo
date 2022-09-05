@@ -96,13 +96,14 @@ a:hover, a:focus {
 }
 
 .background {
-  width: 99vw;
-  height: 93.7rem;
+  width: 100vw;
+  height: 100rem;
   position: absolute;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to bottom, transparent 0%, transparent 75%, rgb(255, 255, 255)), url(https://theaestheticlounge.co.uk/static/media/home-hero.228bbd5e.png);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, white 80%, white 100%), url("/src/assets/img/hero-background.jpg");
   background-size: cover;
-  background-position: left bottom;
+  background-position: 0% 30%;
+  background-color: white;
   top: 0;
   left: 0;
   z-index: -1;
@@ -311,9 +312,9 @@ a:hover, a:focus {
   width: 10rem;
   border: none;
   background-image: url("https://theaestheticlounge.co.uk/static/media/01.9447976b.png");
-  background-size: 12.3rem;
+  background-size: 10rem;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center;
   margin-bottom: 5.6rem;
   transition: all 0.2s ease;
 }
@@ -430,14 +431,15 @@ a:hover, a:focus {
 .course {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 1rem;
+  background-size: 100%;
+  border-radius: 1.5rem;
   height: 43rem;
   overflow: hidden;
   position: relative;
   transition: all 0.5s ease;
   transform-origin: center;
   margin-right: 0.3rem;
+  box-sizing: border-box;
 }
 .course::before {
   content: "";
@@ -589,9 +591,10 @@ a:hover, a:focus {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("https://theaestheticlounge.co.uk/static/media/instagram.634c583a.svg");
+  background-image: url("/src/assets/icons/instagram.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 40px 40px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease;
@@ -602,6 +605,8 @@ a:hover, a:focus {
 }
 .showcase__img {
   border-radius: 1rem;
+  height: 100%;
+  aspect-ratio: 1/1;
 }
 
 .testi {
@@ -892,7 +897,8 @@ a:hover, a:focus {
 }
 .footer__dev--icon {
   padding: 0 0.5rem;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
+  height: 4.5rem;
 }
 .footer__copyright {
   font-size: 1.6rem;

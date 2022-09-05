@@ -1,3 +1,9 @@
+import logo from "../../assets/icons/logo.png";
+import opop from "../../assets/icons/opop.svg";
+import instagram from "../../assets/icons/instagram.svg";
+import facebook from "../../assets/icons/facebook.svg";
+import twitter from "../../assets/icons/twitter.svg";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -37,11 +43,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img
-              className="footer__icon"
-              src="https://theaestheticlounge.co.uk/static/media/instagram.25a940a7.svg"
-              alt="instagram"
-            ></img>
+            <img className="footer__icon" src={instagram} alt="instagram"></img>
             <div className="footer__shadow"></div>
           </a>
           <a
@@ -50,11 +52,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img
-              className="footer__icon"
-              src="https://theaestheticlounge.co.uk/static/media/twitter.e64963e8.svg"
-              alt="twitter"
-            ></img>
+            <img className="footer__icon" src={twitter} alt="twitter"></img>
             <div className="footer__shadow"></div>
           </a>
           <a
@@ -64,19 +62,11 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img
-              className="footer__icon"
-              src="https://theaestheticlounge.co.uk/static/media/facebook.910d39b4.svg"
-              alt="facebook"
-            ></img>
+            <img className="footer__icon" src={facebook} alt="facebook"></img>
             <div className="footer__shadow"></div>
           </a>
         </ul>
-        <img
-          className="footer__logo"
-          alt="logo"
-          src="https://theaestheticlounge.co.uk/static/media/footer-logo.606161eb.png"
-        ></img>
+        <img className="footer__logo" alt="logo" src={logo}></img>
         <div className="footer__bottom">
           <div className="footer__dev">
             Developed by |
@@ -89,10 +79,8 @@ const Footer = () => {
               <img
                 className="footer__dev--icon"
                 alt="dev-icon"
-                src="https://theaestheticlounge.co.uk/static/media/logo-opop.d880cbdf.svg"
+                src={opop}
               ></img>
-              <strong>OPOP</strong>
-              media
             </a>
           </div>
           <div className="footer__copyright">

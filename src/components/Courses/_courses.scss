@@ -44,14 +44,15 @@
 .course {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 1rem;
+  background-size: 100%;
+  border-radius: 1.5rem;
   height: 43rem;
   overflow: hidden;
   position: relative;
   transition: all 0.5s ease;
   transform-origin: center;
   margin-right: 0.3rem;
+  box-sizing: border-box;
 
   &::before {
     content: "";

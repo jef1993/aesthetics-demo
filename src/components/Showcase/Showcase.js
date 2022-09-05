@@ -1,4 +1,8 @@
 import ShowcaseLink from "./ShowcaseLink";
+import showcase1 from "../../assets/img/showcase/showcase-1.jpg";
+import showcase2 from "../../assets/img/showcase/showcase-2.jpg";
+import showcase3 from "../../assets/img/showcase/showcase-3.jpg";
+import showcase4 from "../../assets/img/showcase/showcase-4.jpg";
 
 const Showcase = () => {
   return (
@@ -14,10 +18,10 @@ const Showcase = () => {
       </div>
 
       <div className="showcase__ctn">
-        <ShowcaseLink img="https://theaestheticlounge.co.uk/static/media/01.35c7e087.png" />
-        <ShowcaseLink img="https://theaestheticlounge.co.uk/static/media/02.809a80cb.png" />
-        <ShowcaseLink img="https://theaestheticlounge.co.uk/static/media/03.a2f381b8.png" />
-        <ShowcaseLink img="https://theaestheticlounge.co.uk/static/media/04.9c97650e.png" />
+        <ShowcaseLink img={showcase1} />
+        <ShowcaseLink img={showcase2} />
+        <ShowcaseLink img={showcase3} />
+        <ShowcaseLink img={showcase4} />
       </div>
     </section>
   );

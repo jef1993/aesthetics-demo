@@ -7,19 +7,20 @@
 }
 
 .background {
-  width: 99vw;
-  height: 93.7rem;
+  width: 100vw;
+  height: 100rem;
   position: absolute;
   background-repeat: no-repeat;
   background-image: linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 75%,
-      $color-white
+      180deg,
+      rgba(white, 0.65) 0%,
+      rgba(white, 1) 80%,
+      rgba(white, 1) 100%
     ),
-    url(https://theaestheticlounge.co.uk/static/media/home-hero.228bbd5e.png);
+    url("/src/assets/img/hero-background.jpg");
   background-size: cover;
-  background-position: left bottom;
+  background-position: 0% 30%;
+  background-color: white;
   top: 0;
   left: 0;
   z-index: -1;
@@ -31,5 +32,3 @@
     width: 122rem;
   }
 }
-
-

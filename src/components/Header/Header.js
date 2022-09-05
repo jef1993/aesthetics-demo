@@ -1,14 +1,11 @@
 import NavItem from "./NavItem";
+import logo from "../../assets/icons/logo.png";
 
 const Header = () => {
   return (
     <header className="header">
       <a className="header__home" href="/">
-        <img
-          className="header__logo"
-          src="https://theaestheticlounge.co.uk/static/media/footer-logo.606161eb.png"
-          alt="home logo"
-        ></img>
+        <img className="header__logo" src={logo} alt="home logo"></img>
       </a>
       <nav className="nav">
         <ul className="nav__list">
